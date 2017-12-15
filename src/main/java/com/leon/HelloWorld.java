@@ -16,10 +16,11 @@ import java.util.List;
  * Date: 2017/12/15
  * Time: 14:45
  */
-@Path("/hello")
+@Path("/user")
 public class HelloWorld {
 
     @GET
+    @Path("/showUser")
     @Produces(MediaType.APPLICATION_JSON)
     public Response sayHello() {
         List<Student> lists = new ArrayList<Student>();
